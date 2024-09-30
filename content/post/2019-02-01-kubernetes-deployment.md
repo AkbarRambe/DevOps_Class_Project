@@ -11,8 +11,7 @@ First application on Kubernetes using Kubernetes deployments
 <!--more-->
 
 ```sh
-kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
-kubectl expose deployment kubernetes-bootcamp --type=NodePort --port=8080
+kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080
 ```
 
 Now, check whether it is running:
